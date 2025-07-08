@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.swiper-custom-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background-color: #d1d5db; /* gray-300 */
+  opacity: 1;
+  transition: background-color 0.3s;
+}
+
+.swiper-custom-pagination .swiper-pagination-bullet-active {
+  background-color: #f97316; /* orange-500 */
+}
