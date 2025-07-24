@@ -4,13 +4,12 @@ function Contact() {
   return (
     <section className="px-6 py-16 pt-36 font-montserrat">
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
+
         <div className="flex items-center gap-4 mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1c1c2c]">Send Us A Message</h2>
           <div className="flex-grow h-px bg-[#1c1c2c] opacity-30"></div>
         </div>
 
-        {/* Form */}
         <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input
             type="text"
@@ -33,7 +32,6 @@ function Contact() {
             className="rounded-full px-5 py-3 w-full bg-[#e5e5e5] placeholder-gray-600 outline-none"
           />
 
-          {/* Textarea & Button (full width) */}
           <div className="md:col-span-2 relative">
             <textarea
               rows="6"

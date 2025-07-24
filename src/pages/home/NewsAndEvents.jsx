@@ -7,44 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import EventCard from './EventCard';
-
-export const events = [
-  {
-    title: "The BIGGEST CONFERENCE & Career Fairs for Women in Tech in Europe",
-    date: "2025-06-11T00:00:00",
-    image: "https://images.unsplash.com/photo-1612832021156-4b3d6e4c9f62?auto=format&fit=crop&w=1400&q=80",
-    venue: "EXPO XXI, Warsaw, Poland",
-    format: "+online",
-  },
-  {
-    title: "The BIGGEST CONFERENCE & Career Fairs for Women in Tech in Europe",
-    date: "2025-06-11T00:00:00",
-    image: "https://images.unsplash.com/photo-1612832021156-4b3d6e4c9f62?auto=format&fit=crop&w=1400&q=80",
-    venue: "EXPO XXI, Warsaw, Poland",
-    format: "+online",
-  },
-  {
-    title: "The BIGGEST CONFERENCE & Career Fairs for Women in Tech in Europe",
-    date: "2025-06-11T00:00:00",
-    image: "https://images.unsplash.com/photo-1612832021156-4b3d6e4c9f62?auto=format&fit=crop&w=1400&q=80",
-    venue: "EXPO XXI, Warsaw, Poland",
-    format: "+online",
-  },
-  {
-    title: "The BIGGEST CONFERENCE & Career Fairs for Women in Tech in Europe",
-    date: "2025-06-11T00:00:00",
-    image: "https://images.unsplash.com/photo-1612832021156-4b3d6e4c9f62?auto=format&fit=crop&w=1400&q=80",
-    venue: "EXPO XXI, Warsaw, Poland",
-    format: "+online",
-  },
-  {
-    title: "The BIGGEST CONFERENCE & Career Fairs for Women in Tech in Europe",
-    date: "2025-08-11T00:00:00",
-    image: "https://images.unsplash.com/photo-1612832021156-4b3d6e4c9f62?auto=format&fit=crop&w=1400&q=80",
-    venue: "EXPO XXI, Warsaw, Poland",
-    format: "+online",
-  },
-];
+import { useGetEvents } from '../../hooks/useGetEvents';
 
 export default function NewsAndEvents() {
   const prevRef = useRef(null);
@@ -58,6 +21,19 @@ export default function NewsAndEvents() {
     swiperInstance.navigation.init();
     swiperInstance.navigation.update();
   }, [swiperInstance]);
+
+    const { data, error } = useGetEvents();
+
+  // if (isLoading) {
+  //   return <div className="text-center py-20 text-gray-600">Loading events...</div>;
+  // }
+
+  // if (error) {
+  //   return <div className="text-center py-20 text-red-500">Failed to load events.</div>;
+  // }
+
+  const events = data?.data || [];
+  console.log(events)
 
   return (
     <section className="px-6 py-12 max-w-7xl mx-auto">
