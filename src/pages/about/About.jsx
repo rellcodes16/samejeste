@@ -7,11 +7,11 @@ function About() {
         <h2 className="text-3xl md:text-4xl font-bold text-[#1c1c2c]">About Us</h2>
         <div className="flex-grow h-px bg-[#1c1c2c] opacity-30"></div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:bg-[#E2E2E2] p-4 rounded-xl gap-4 mb-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 md:bg-[#E2E2E2] p-4 rounded-xl gap-4 mb-20">
         <img
-          src="tems.png"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVP5dNzFAscuxmrorkiaMvIjzsVc5WxNm93A&s"
           alt="Woman"
-          className="hidden md:block w-full h-[300px] sm:h-[400px] md:h-[620px] rounded-xl object-cover"
+          className="hidden lg:block w-full h-[300px] sm:h-[400px] md:h-[620px] rounded-xl object-cover"
         />
 
         <div className="bg-white rounded-xl p-6 shadow-sm flex flex-col justify-center">
@@ -81,7 +81,7 @@ function About() {
           <img
             src="tems.png"
             alt="Another Woman"
-            className="w-full h-[300px] sm:h-[400px] md:h-[437px] rounded-xl object-cover"
+            className="w-full sm:h-[400px] h-full lg:h-[437px] rounded-xl object-cover"
           />
         </div>
       </div>

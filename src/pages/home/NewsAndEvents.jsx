@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import EventCard from './EventCard';
 import { useGetEvents } from '../../hooks/useGetEvents';
+import { Link } from 'react-router-dom';
 
 export default function NewsAndEvents() {
   const prevRef = useRef(null);
@@ -36,14 +37,14 @@ export default function NewsAndEvents() {
   console.log(events)
 
   return (
-    <section className="px-6 py-12 max-w-7xl mx-auto">
+    <section className="px-6 py-12 max-w-7xl mx-auto font-montserrat">
       <motion.div
         className="flex items-center mb-6 w-full"
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-4xl font-serif font-semibold text-gray-900 whitespace-nowrap mr-4">
+        <h2 className="text-4xl font-semibold text-gray-900 whitespace-nowrap mr-4">
           News & Events
         </h2>
         <div className="h-px bg-gray-300 flex-grow"></div>
@@ -95,9 +96,14 @@ export default function NewsAndEvents() {
           </button>
         </div>
 
-        <button className="border-[2px] font-semibold border-black px-5 py-2 rounded-full hover:bg-black hover:text-white transition">
-          Go to events
-        </button>
+        <div className="flex justify-end mt-8">
+        <Link
+          to="/newsandevents"
+          className="border-[2px] border-gray-400 font-semibold px-6 py-2 rounded-full hover:bg-gray-100 transition"
+        >
+          Go to Events
+        </Link>
+      </div>
       </motion.div>
     </section>
   );

@@ -21,7 +21,7 @@ export default function Countdown({ targetDate }) {
 
   return (
     <motion.div
-        className="flex gap-4 text-gray-800 bg-white px-6 py-2 rounded-xl shadow"
+        className="flex gap-4 text-gray-800 bg-white px-6 py-2 font-montserrat rounded-xl shadow"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}

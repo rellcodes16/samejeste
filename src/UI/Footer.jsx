@@ -3,10 +3,10 @@ import { ChevronRight } from 'lucide-react';
 
 function Footer() {
   return (
-    <footer className="bg-white pt-6 text-gray-800">
+    <footer className="bg-white font-montserrat pt-6 text-gray-800">
       <div className="max-w-7xl mx-auto py-10 px-6 flex flex-col md:flex-row justify-between gap-12">
         <div className="flex-1 min-w-[250px]">
-          <h1 className="text-3xl font-semibold text-[#FF4F5A] italic">Samejesté</h1>
+          <h1 className="text-3xl font-semibold text-[#FF4F5A] italic">Sa Majesté</h1>
           <p className="mt-2 text-sm text-gray-600 leading-relaxed max-w-sm">
             Building the safe minspace for representation of women's views without drawbacks
           </p>

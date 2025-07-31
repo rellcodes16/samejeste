@@ -13,15 +13,15 @@ function Hero() {
   const quoteSwiperRef = useRef(null);
   const imageSwiperRef = useRef(null);
 
-  const { data, isLoading, error } = useGetQuotes();
+  const { data } = useGetQuotes();
 
-  if (isLoading) {
-    return <div className="text-center py-20 text-gray-600">Loading quotes...</div>;
-  }
+  // if (isLoading) {
+  //   return <div className="text-center py-20 text-gray-600">Loading quotes...</div>;
+  // }
 
-  if (error) {
-    return <div className="text-center py-20 text-red-500">Failed to load quotes.</div>;
-  }
+  // if (error) {
+  //   return <div className="text-center py-20 text-red-500">Failed to load quotes.</div>;
+  // }
 
   const quotes = data?.data || [];
 
@@ -40,8 +40,8 @@ function Hero() {
   };
 
   return (
-    <section className="bg-[url('noise-bg2.webp')] w-full px-6 md:px-20 py-24 flex flex-col md:flex-row justify-between items-center gap-12 font-montserrat">
-      <div className="w-full md:w-1/2 space-y-8">
+    <section className="bg-[url('noise-bg2.webp')] font-montserrat w-full px-6 md:px-20 py-24 flex flex-col md:flex-row justify-between items-center gap-12">
+      <div className="w-full lg:w-1/2 space-y-8">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 5000 }}
@@ -66,7 +66,7 @@ function Hero() {
 
     <FaQuoteRight className="text-4xl md:text-6xl text-[#FF4F5A] self-end" />
   </div>
-    <div className="mt-10 md:hidden">
+    <div className="mt-10 md:block lg:hidden">
     <p className="text-sm font-semibold italic text-gray-800 text-end">-{quote.name}</p>
   </div>
 </SwiperSlide>
@@ -87,7 +87,7 @@ function Hero() {
           </Link>
         </div>
       </div>
-      <div className="hidden md:flex md:w-1/2 justify-center items-center relative">
+      <div className="hidden lg:flex lg:w-1/2 justify-center items-center relative">
         <div className="relative w-[300px] h-[420px]">
           <div className="absolute top-3 left-3 w-full h-full bg-gray-200 rounded-3xl blur-sm z-0 shadow-md" />
           <div className="absolute top-1 left-1 w-full h-full bg-gray-100 rounded-3xl blur-sm z-0 shadow-inner" />

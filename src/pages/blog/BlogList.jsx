@@ -1,142 +1,29 @@
 import React, { useState } from "react";
 import BlogCard from "./BlogCard";
 import { FiSearch } from "react-icons/fi";
-
-const blogData = [
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  {
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    title: "7 secrets to having a perfect glowing skin – at all times",
-    description: "These women may not be famous, but their stories will stick something in you.",
-    author: "Rihanna Dolls",
-    date: "3 Days Ago",
-    tags: ["Feminism", "Empowerment", "Social Justice"],
-  },
-  // Duplicate or add more blog objects here...
-];
+import { useGetBlogs } from "../../hooks/useGetBlogs";
 
 const CARDS_PER_PAGE = 9;
 
 function BlogList() {
   const [currentPage, setCurrentPage] = useState(1);
+  const [search, setSearch] = useState('');
+  const [searchInput, setSearchInput] = useState('');
 
-  const totalPages = Math.ceil(blogData.length / CARDS_PER_PAGE);
+  const { data, isLoading, isError } = useGetBlogs({
+    page: currentPage,
+    limit: CARDS_PER_PAGE,
+    search,
+  });
 
-  const currentData = blogData.slice(
-    (currentPage - 1) * CARDS_PER_PAGE,
-    currentPage * CARDS_PER_PAGE
-  );
+  const blogs = data?.data || [];
+  const totalPages = data?.totalPages || 1;
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    setCurrentPage(1);
+    setSearch(searchInput);
+  };
 
   const goToPage = (page) => {
     if (page >= 1 && page <= totalPages) {
@@ -172,7 +59,7 @@ function BlogList() {
         <button
           key={num}
           onClick={() => goToPage(num)}
-          className={`w-8 h-8 rounded-full flex items-center justify-center text-sm ${
+          className={`w-8 h-8 rounded-full font-montserrat flex items-center justify-center text-sm ${
             currentPage === num
               ? "border text-[#FF4F5A] border-[#f7eeee]"
               : "text-gray-600 hover:bg-gray-200"
@@ -193,23 +80,39 @@ function BlogList() {
       </div>
 
       {/* Search */}
-      <div className="flex flex-wrap gap-4 items-center mb-8">
+      <form onSubmit={handleSearchSubmit} className="flex flex-wrap gap-4 items-center mb-8">
         <div className="relative flex-1">
           <input
             type="text"
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
             placeholder="Search Blogs"
             className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full"
           />
           <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
         </div>
-      </div>
+        <button
+          type="submit"
+          className="px-6 py-2 bg-[#FF4F5A] hidden md:block text-white rounded-full cursor-pointer text-sm hover:bg-[#e84752]"
+        >
+          Search
+        </button>
+      </form>
 
       {/* Blog Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-        {currentData.map((blog, index) => (
-          <BlogCard key={index} {...blog} />
-        ))}
-      </div>
+      {isLoading ? (
+        <p className="text-center">Loading...</p>
+      ) : isError ? (
+        <p className="text-center text-red-500">Failed to load blogs.</p>
+      ) : blogs.length === 0 ? (
+        <p className="text-center">No blogs found.</p>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+          {blogs.map((blog, index) => (
+            <BlogCard key={blog._id || index} {...blog} />
+          ))}
+        </div>
+      )}
 
       {/* Pagination */}
       {totalPages > 1 && (
