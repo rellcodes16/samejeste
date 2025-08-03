@@ -1,6 +1,6 @@
 function CelebrateMotherhood() {
   return (
-    <section className="px-4 py-10 md:px-8 mt-10 max-w-3xl mx-auto font-sans text-gray-800 text-lg">
+    <section className="px-2 py-10 md:px-8 mt-10 max-w-3xl mx-auto font-sans text-gray-800 text-lg">
       <p className="mb-6 leading-relaxed text-justify">
         <span className="text-5xl text-[#FF4F5A] font-permanent-marker">M</span>other’s Day is a day set aside each year to celebrate all mothers. 
         This includes mothers who have children through non-traditional means, whether via IVF or adoption, and women who 

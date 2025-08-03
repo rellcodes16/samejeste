@@ -42,7 +42,7 @@ const profiles = [
 
 function BlackWomenInspire() {
   return (
-    <section className="px-4 py-10 md:px-8 mt-10 max-w-3xl mx-auto font-sans text-gray-800 text-lg">
+    <section className="px-2 py-10 md:px-8 mt-10 max-w-3xl mx-auto font-sans text-gray-800 text-lg">
       {/* <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">Black Women Who Inspire</h1> */}
       <p className="mb-6 leading-relaxed text-justify">
         <span className="text-5xl text-[#FF4F5A] font-permanent-marker">W</span>ith Juneteenth around the corner, a day set aside to commemorate the emancipation of Black people, 

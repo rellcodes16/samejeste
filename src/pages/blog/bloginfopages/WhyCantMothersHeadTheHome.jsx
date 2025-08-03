@@ -1,6 +1,6 @@
 function WhyCantMothersHeadTheHome() {
   return (
-    <section className="px-4 py-10 md:px-8 mt-10 max-w-3xl mx-auto font-sans text-gray-800 text-lg">
+    <section className="px-2 py-10 md:px-8 mt-10 max-w-3xl mx-auto font-sans text-gray-800 text-lg">
       <p className="mb-6 leading-relaxed text-justify">
         <span className="text-5xl text-[#FF4F5A] font-permanent-marker">T</span>here’s a common saying: “The man is the head, the woman is the neck,” which essentially means men lead while women support. 
         Though it attempts to patronize women by implying they still matter—after all, the head can’t stand without the neck—it ultimately 

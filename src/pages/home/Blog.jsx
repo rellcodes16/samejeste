@@ -49,9 +49,11 @@ export default function Blog() {
                     <p className="text-gray-500">{new Date(blog.createdAt).toLocaleDateString()}</p>
                   </div>
                 </div>
-                <button className="bg-[#FF4F5A] text-white text-sm px-4 py-2 rounded-full cursor-pointer hover:bg-[#e84752] transition">
-                  Read Blog
-                </button>
+                <Link to={`/blogs/${slug}`}>
+                  <button className="bg-[#FF4F5A] cursor-pointer text-white px-4 py-2 rounded-full text-sm hover:bg-[#e84752] transition">
+                    Read Blog
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

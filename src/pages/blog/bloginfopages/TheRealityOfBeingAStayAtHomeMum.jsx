@@ -1,6 +1,6 @@
 function TheRealityOfBeingASAHM() {
   return (
-    <section className="px-4 py-10 md:px-8 mt-10 max-w-3xl mx-auto font-sans text-gray-800 text-lg">
+    <section className="px-2 py-10 md:px-8 mt-10 max-w-3xl mx-auto font-sans text-gray-800 text-lg">
       <p className="mb-6 leading-relaxed text-justify">
         <span className="text-5xl text-[#FF4F5A] font-permanent-marker">I</span>magine not having to work, but sitting at home all day—well, being a stay-at-home mom (SAHM) is nothing of the sort. 
         The narrative that, before women had equal rights, they simply stayed at home doing nothing while men worked hard to provide for their family is an ahistorical lie. 
