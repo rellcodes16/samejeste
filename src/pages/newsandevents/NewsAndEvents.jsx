@@ -6,7 +6,7 @@ import LoadingScreen from "../../UI/Loading"
 import Socials from "../home/Socials"
 import Featured from "./Featured"
 import News from "./News"
-import Upcoming from "./upcoming"
+import Upcoming from "./Upcoming"
 
 function NewsAndEvents() {
   const { isLoading:isLoadingEvents } = useGetEvents()
