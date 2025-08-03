@@ -21,8 +21,8 @@ function About() {
           </span>
           <div className="text-sm leading-7 text-gray-700 space-y-4">
             <p>
-              Hi, welcome to Samejesté — a space created for women, by women, and with women in mind.
-              We started Samejesté because we were tired of watching powerful stories go unheard. The quiet ones.
+              Hi, welcome to Sa Majesté — a space created for women, by women, and with women in mind.
+              We started Sa Majesté because we were tired of watching powerful stories go unheard. The quiet ones.
               The loud ones. The bold, messy, beautiful unfinished ones. All of it matters. Every woman’s voice
               deserves a platform — not just the perfect ones, not just the famous ones — every single one.
             </p>
@@ -32,14 +32,14 @@ function About() {
               women just trying to get through the day and still showing up for themselves.
             </p>
             <p>
-              Our name, Samejesté, is a reminder: there’s royalty in all of us.
+              Our name, Sa Majesté, is a reminder: there’s royalty in all of us.
               It’s not about crowns or titles — it’s about owning your story, finding your voice and lifting others as you
               rise. So whether you are here to read or feel seen, to learn something new or just to breathe, you're in
               the right place.
             </p>
             <p>
               This is more than a blog. This is sisterhood. This is power in progress.
-              Welcome to Samejesté. Where women reign.
+              Welcome to Sa Majesté. Where women reign.
             </p>
           </div>
         </div>

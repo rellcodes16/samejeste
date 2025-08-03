@@ -9,7 +9,7 @@ function Footer() {
         <div className="flex-1 min-w-[250px]">
           <h1 className="text-3xl font-semibold text-[#FF4F5A] italic">Sa Majesté</h1>
           <p className="mt-2 text-sm text-gray-600 leading-relaxed max-w-sm">
-            Building the safe minspace for representation of women's views without drawbacks
+            Empowering Black Women since 2017.
           </p>
         </div>
 

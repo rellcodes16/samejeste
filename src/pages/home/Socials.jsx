@@ -25,7 +25,7 @@ function Socials() {
           </p>
 
 <a
-  href="https://instagram.com/ebanghanjang"
+  href="https://instagram.com/samajestemag"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-flex items-center gap-2 border border-[#FF4F5A] text-[#FF4F5A] px-5 py-2 rounded-full text-sm font-medium transition hover:bg-[#FF4F5A] hover:text-white group"
