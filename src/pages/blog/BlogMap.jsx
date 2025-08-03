@@ -5,11 +5,26 @@ import TheRealityOfBeingASAHM from "./bloginfopages/TheRealityOfBeingAStayAtHome
 import WhyCantMothersHeadTheHome from "./bloginfopages/WhyCantMothersHeadTheHome";
 
 const blogMap = {
-  'black-women-who-inspire': BlackWomenInspire,
-  'how-to-improve-your-mental-health-as-a-woman': ImproveMentalHealth,
-  'how-to-celebrate-motherhood-without-expecting-every-woman-to-embrace-it': CelebrateMotherhood,
-  'why-can-t-mothers-head-the-home': WhyCantMothersHeadTheHome,
-  'the-reality-of-being-a-stay-at-home-mom': TheRealityOfBeingASAHM,
+  'black-women-who-inspire': {
+    component: BlackWomenInspire,
+    readTime: '6 mins read',
+  },
+  'how-to-improve-your-mental-health-as-a-woman': {
+    component: ImproveMentalHealth,
+    readTime: '7 mins read',
+  },
+  'how-to-celebrate-motherhood-without-expecting-every-woman-to-embrace-it': {
+    component: CelebrateMotherhood,
+    readTime: '7 mins read',
+  },
+  'why-can-t-mothers-head-the-home': {
+    component: WhyCantMothersHeadTheHome,
+    readTime: '7 mins read',
+  },
+  'the-reality-of-being-a-stay-at-home-mom': {
+    component: TheRealityOfBeingASAHM,
+    readTime: '7 mins read',
+  },
 };
 
 export default blogMap;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import { useGetEvents } from '../../hooks/useGetEvents';
+import { Link } from 'react-router-dom';
 
 const UpcomingEvents = () => {
   const { data } = useGetEvents();
@@ -60,12 +61,16 @@ const UpcomingEvents = () => {
                     </span>
                   </div>
                   <div className="space-x-4">
-                    <button className="bg-[#FF4F5A] text-white px-4 py-1.5 rounded-full text-xs hover:bg-[#e84752] transition">
-                      Register now
-                    </button>
-                    <button className="border border-gray-400 text-gray-700 px-4 py-1.5 rounded-full text-xs hover:bg-gray-100 transition">
-                      View details
-                    </button>
+                    <a
+                      href={event.registerURL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="bg-[#FF4F5A] text-white px-4 py-2 cursor-pointer rounded-full text-sm hover:bg-[#e84752] transition">
+                        Register now
+                      </button>
+                    </a>
+
                   </div>
                 </div>
               </div>

@@ -73,13 +73,11 @@ function BlogList() {
 
   return (
     <div className="px-6 py-10">
-      {/* Title */}
       <div className="flex items-center mb-8">
         <h2 className="text-4xl font-bold mr-4 whitespace-nowrap">Blogs</h2>
         <div className="flex-1 h-px bg-gray-300"></div>
       </div>
 
-      {/* Search */}
       <form onSubmit={handleSearchSubmit} className="flex flex-wrap gap-4 items-center mb-8">
         <div className="relative flex-1">
           <input
@@ -99,7 +97,6 @@ function BlogList() {
         </button>
       </form>
 
-      {/* Blog Cards */}
       {isLoading ? (
         <p className="text-center">Loading...</p>
       ) : isError ? (
@@ -114,7 +111,6 @@ function BlogList() {
         </div>
       )}
 
-      {/* Pagination */}
       {totalPages > 1 && (
         <div className="flex justify-center items-center gap-2 text-sm py-4 rounded-md">
           <button

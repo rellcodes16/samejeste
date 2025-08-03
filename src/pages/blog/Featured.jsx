@@ -57,7 +57,7 @@ function Featured() {
             </div>
 
             <Link to={`/blogs/${blogs[0]?.slug}`}>
-              <button className="bg-[#FF4F5A] text-white px-4 py-2 rounded-full text-sm hover:bg-[#e84752] transition">
+              <button className="bg-[#FF4F5A] cursor-pointer text-white px-4 py-2 rounded-full text-sm hover:bg-[#e84752] transition">
                 Read Blog
               </button>
             </Link>

@@ -7,10 +7,8 @@ function Socials() {
   return (
     <section className="px-6 md:px-14 py-12 mx-auto bg-white">
       <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
-        {/* Left: Instagram Icon */}
         <img src='/insta.png' alt='insta' className="w-[260px] h-[260px] "/>
 
-        {/* Right: Text & Follow Button */}
         <div className="w-full md:w-2/3">
           <h3 className="text-2xl font-bold mb-4 text-gray-800">
             What You’ll Discover on Our Instagram
@@ -21,8 +19,8 @@ function Socials() {
             for <strong>Feminism</strong>, advocate for <strong>Women’s Rights</strong>, and
             spotlight efforts towards the <strong>empowerment of the Girl Child</strong>.
             <br /><br />
-            You’ll find excerpts from in-depth interviews, thought-provoking visual essays,
-            behind-the-scenes moments, and curated highlights from community events and features.
+            You’ll find excerpts from thought-provoking visual essays,
+            and curated highlights from community events and features.
             It's not just a feed — it’s a growing narrative of courage, leadership, and transformation.
           </p>
 

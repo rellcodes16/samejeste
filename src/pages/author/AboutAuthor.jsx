@@ -49,15 +49,7 @@ const formatLabel = (url, platform) => {
 
 export default function AboutAuthor() {
   const { authorId } = useParams();
-  const { data, isLoading, isError } = useGetBlogsByAuthor(authorId);
-
-  if (isLoading) {
-    return <div className="text-center mt-10">Loading author info...</div>;
-  }
-
-  if (isError) {
-    return <div className="text-center mt-10 text-red-500">Failed to load author info.</div>;
-  }
+  const { data } = useGetBlogsByAuthor(authorId);
 
   const author = data || {};
   const { name, about, pfp, mediaURL = [] } = author;
@@ -65,7 +57,6 @@ export default function AboutAuthor() {
   return (
     <section className="max-w-6xl mx-auto mt-24 px-4 sm:px-6 lg:px-8">
       <div className="bg-gray-100 rounded-2xl p-6 sm:p-10 flex flex-col lg:flex-row items-center lg:items-start gap-8 shadow-md">
-        {/* Avatar */}
         <div className="w-40 h-40 sm:w-60 sm:h-60 rounded-full overflow-hidden shadow-md flex-shrink-0">
           <img
             src={pfp}
@@ -74,7 +65,6 @@ export default function AboutAuthor() {
           />
         </div>
 
-        {/* Author Info */}
         <div className="flex-1 text-center lg:text-left">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">{name}</h2>
 

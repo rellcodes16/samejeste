@@ -19,8 +19,6 @@ function Header() {
         <div className="flex items-center space-x-2">
           <span className="text-2xl font-semibold text-[#FF5C5C]">Sa Majesté</span>
         </div>
-
-        {/* Desktop Nav (lg and up) */}
         <nav className="hidden lg:flex items-center space-x-6 text-sm">
           {navLinks.map((link, index) => (
             <NavLink
@@ -40,7 +38,6 @@ function Header() {
           ))}
         </nav>
 
-        {/* Desktop Contact Button */}
         <div className="hidden lg:block">
           <NavLink
             to="/contact"
@@ -49,8 +46,6 @@ function Header() {
             Contact us
           </NavLink>
         </div>
-
-        {/* Hamburger Button for md and below */}
         <button
           className="lg:hidden text-gray-700"
           onClick={() => setMobileMenuOpen(prev => !prev)}
@@ -60,7 +55,6 @@ function Header() {
         </button>
       </header>
 
-      {/* Mobile Dropdown Menu */}
       <div
         className={`lg:hidden fixed top-[64px] left-0 right-0 origin-top transform transition duration-300 z-40 bg-[url('noise-bg2.webp')] bg-white shadow-md px-6 py-4 space-y-2 font-montserrat ${
           mobileMenuOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0 pointer-events-none'

@@ -11,7 +11,7 @@ import ErrorScreen from '../../UI/Error';
 import BackToBlog from './BackToBlog';
 import { useGetRelatedBlogs } from '../../hooks/useGetRelatedBlogs';
 
-export default function BlogPage() {
+function BlogPage() {
   const { slug } = useParams();
   const { data, isLoading, isError } = useGetBlogBySlug(slug);
   const { isLoading: isLoadingRelatedBlog } = useGetRelatedBlogs
@@ -21,13 +21,16 @@ export default function BlogPage() {
   if (isLoading || isLoadingRelatedBlog) return <LoadingScreen />;
   if (isError || !blog) return <ErrorScreen />;
 
-  const BlogComponent = blogMap[slug];
+  const blogData = blogMap[slug];
+  const BlogComponent = blogData?.component;
+  const readTime = blogData?.readTime;
+
 
   return (
     <div>
       <Header />
       <BackToBlog />
-      <BlogIntroPage blog={blog} />
+      <BlogIntroPage blog={blog} readTime={readTime} />
       <div className="lg:flex gap-3 px-15 items-start">
         {BlogComponent && <BlogComponent blog={blog} />}
         <RelatedBlogs tags={blog.tags} slug={blog._id} />
@@ -37,3 +40,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+export default BlogPage

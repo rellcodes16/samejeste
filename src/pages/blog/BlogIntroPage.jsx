@@ -2,13 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { Timer } from "lucide-react";
 import { useGetBlogBySlug } from "../../hooks/useGetBlogBySlug";
 
-function BlogIntroPage() {
-  const { slug } = useParams();
-  const { data } = useGetBlogBySlug(slug);
-
-  const blog = data?.data;
-  console.log(blog.author)
-
+function BlogIntroPage({ blog, readTime }) {
   const capitalizeWords = (str) =>
     str
       .split(" ")
@@ -30,7 +24,7 @@ function BlogIntroPage() {
 
             <div className="flex items-center italic text-gray-400 mb-2">
               <Timer className="w-5 mr-2" />
-              <p>{blog.readTime || "5 mins read"}</p>
+              <p>{readTime || "5 mins read"}</p>
             </div>
 
             <p className="text-gray-700 mb-3 italic">{blog.lead}</p>

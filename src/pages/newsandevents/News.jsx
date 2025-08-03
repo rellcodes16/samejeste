@@ -6,9 +6,6 @@ function News() {
   const { data, isLoading, isError } = useGetNews();
   const newsItems = data?.data || [];
 
-  if (isLoading) return <p className="text-center py-10">Loading news...</p>;
-  if (isError) return <p className="text-center py-10 text-red-500">Failed to load news.</p>;
-
   return (
     <section className="px-4 sm:px-6 md:px-14 py-10 sm:py-12 mt-14">
       <div className="flex items-center mb-6 sm:mb-8">

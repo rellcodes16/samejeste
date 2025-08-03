@@ -1,7 +1,9 @@
 import { useGetRelatedBlogs } from '../../hooks/useGetRelatedBlogs';
+import { Link } from 'react-router-dom';
 
 function RelatedBlogs({ tags, slug }) {
   const { data: relatedBlogs } = useGetRelatedBlogs({ tags, slug });
+  console.log(relatedBlogs)
 
   return (
     <div className="bg-white rounded-xl mt-10 shadow-md p-4 font-montserrat sm:p-6 md:p-8 space-y-6">
@@ -14,9 +16,10 @@ function RelatedBlogs({ tags, slug }) {
       )}
 
       {relatedBlogs?.map((blog, i) => (
-        <div
+        <Link
+          to={`/blogs/${blog.slug}`}
           key={blog._id}
-          className={`flex flex-col sm:flex-row gap-4 items-start py-4 ${
+          className={`flex flex-col sm:flex-row gap-4 items-start py-4 cursor-pointer px-3 rounded-md hover:bg-gray-50 transition ${
             i !== relatedBlogs.length - 1 ? 'border-b border-gray-200' : ''
           }`}
         >
@@ -44,7 +47,7 @@ function RelatedBlogs({ tags, slug }) {
               ))}
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

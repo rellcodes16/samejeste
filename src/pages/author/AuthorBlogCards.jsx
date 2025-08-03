@@ -6,11 +6,8 @@ import BlogCard from "../blog/BlogCard";
 
 function AuthorBlogCards() {
   const { authorId } = useParams(); 
-  const { data: authorblogs, isLoading, error } = useGetBlogsByAuthor(authorId);
-  console.log(authorblogs)
-
-  if (isLoading) return <LoadingScreen />;
-  if (error) return <ErrorScreen />;
+  const { data: authorblogs } = useGetBlogsByAuthor(authorId);
+  // console.log(authorblogs)
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">

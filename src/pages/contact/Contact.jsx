@@ -41,7 +41,7 @@ function Contact() {
 
             <button
               type="submit"
-              className="absolute bottom-4 right-4 bg-[#FF5C5C] text-white flex items-center gap-2 px-5 py-2 rounded-full text-sm"
+              className="absolute cursor-pointer bottom-4 right-4 bg-[#FF5C5C] text-white flex items-center gap-2 px-5 py-2 rounded-full text-sm"
             >
               Send <Mail size={16} />
             </button>
