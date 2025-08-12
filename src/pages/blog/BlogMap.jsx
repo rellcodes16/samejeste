@@ -1,5 +1,6 @@
 import BlackWomenInspire from "./bloginfopages/BlackWomenInspire";
 import CelebrateMotherhood from "./bloginfopages/CelebrateMotherhood";
+import FeminineEnergy from "./bloginfopages/FeminineEnergy";
 import ImproveMentalHealth from "./bloginfopages/ImproveMentalHealth";
 import TheRealityOfBeingASAHM from "./bloginfopages/TheRealityOfBeingAStayAtHomeMum";
 import WhyCantMothersHeadTheHome from "./bloginfopages/WhyCantMothersHeadTheHome";
@@ -25,6 +26,10 @@ const blogMap = {
     component: TheRealityOfBeingASAHM,
     readTime: '7 mins read',
   },
+  'what-no-one-tells-you-about-tapping-into-your-feminine-energy':{
+    component: FeminineEnergy,
+    readTime: '7 mins read',
+  }
 };
 
 export default blogMap;
