@@ -2,6 +2,7 @@ import BlackWomenInspire from "./bloginfopages/BlackWomenInspire";
 import CelebrateMotherhood from "./bloginfopages/CelebrateMotherhood";
 import FeminineEnergy from "./bloginfopages/FeminineEnergy";
 import ImproveMentalHealth from "./bloginfopages/ImproveMentalHealth";
+import SexPostPartum from "./bloginfopages/SexPostPartum";
 import TheRealityOfBeingASAHM from "./bloginfopages/TheRealityOfBeingAStayAtHomeMum";
 import WhyCantMothersHeadTheHome from "./bloginfopages/WhyCantMothersHeadTheHome";
 
@@ -29,6 +30,10 @@ const blogMap = {
   'what-no-one-tells-you-about-tapping-into-your-feminine-energy':{
     component: FeminineEnergy,
     readTime: '7 mins read',
+  },
+  '5-african-women-on-sex-postpartum':{
+    component: SexPostPartum,
+    readTime: '5 mins read',
   }
 };
 
