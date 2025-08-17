@@ -18,7 +18,7 @@ function SexPostPartum() {
       />
 
       <div className="mb-6 text-justify space-y-4">
-        <p>
+        <p className="font-semibold text-lg">
             “I went in thinking it would just be 15 minutes, before I knew it, almost an hour had passed” — Bessem*, 36
         </p>
         <p>
@@ -40,7 +40,7 @@ function SexPostPartum() {
       />
 
       <div className="mb-6 text-justify space-y-4">
-        <p>
+        <p className="font-semibold text-lg">
             “I wanted it as much as he did, but I was the one who ended up regretting it” —Chisom*, 30
         </p>
         <p>
@@ -63,7 +63,7 @@ function SexPostPartum() {
       />
 
       <div className="mb-6 text-justify space-y-4">
-        <p>
+        <p className="font-semibold text-lg">
             “As painful as it was, though, it was how we got our first boy child” —Khosi*, 46
         </p>
         <p>
@@ -86,7 +86,7 @@ function SexPostPartum() {
       />
 
       <div className="mb-6 text-justify space-y-4">
-        <p>
+        <p className="font-semibold text-lg">
             “I slept off the first time we tried again, and this was after long I had given birth” —Thelma* 26 
         </p>
         <p>
