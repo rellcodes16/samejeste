@@ -80,6 +80,28 @@ function SexPostPartum() {
       </div>
 
       <img
+        src="https://i.pinimg.com/736x/58/01/d0/5801d0acd41a8a7ebb0a0ba7fcdefe8e.jpg"
+        alt="motherhood"
+        className="w-full max-w-3xl mx-auto rounded-lg mb-6"
+      />
+
+      <div className="mb-6 text-justify space-y-4">
+        <p className="font-semibold text-lg">
+            “I had already lost feeling in my hands, I couldn’t lose in my legs too” —Vera* 30
+        </p>
+        <p>
+            Vera had already lost feeling in one pair of limbs, and she made sure she wasn’t going to lose in another.
+        </p>
+        <p>
+            “Pregnancy came with a lot of complications for me, and I am grateful to God for keeping me alive through it all. I don’t remember how long after my pregnancy we tried again, but I know it didn’t last long. Because of pregnancy, 
+            I had already lost feeling in my hands, I couldn’t come and lose feelings in my legs too, so we stopped. 
+        </p>
+        <p>
+            I will advise any woman to take at least that exact same 9 months it took for the pregnancy again before trying, because the doctor's advice of six weeks is not enough. Pregnancy really changes women and it’s not something you can just up and start again” 
+        </p>
+      </div>
+
+      <img
         src="https://i.pinimg.com/1200x/e2/90/f6/e290f6ecf0ff819c503c94bd695a13ff.jpg"
         alt="motherhood"
         className="w-full max-w-3xl mx-auto rounded-lg mb-6"
