@@ -4,6 +4,7 @@ import FeminineEnergy from "./bloginfopages/FeminineEnergy";
 import ImproveMentalHealth from "./bloginfopages/ImproveMentalHealth";
 import SexPostPartum from "./bloginfopages/SexPostPartum";
 import TheRealityOfBeingASAHM from "./bloginfopages/TheRealityOfBeingAStayAtHomeMum";
+import ThingsYouShouldNeverSayToSingleMothers from "./bloginfopages/ThingsYouShouldNeverSayToSingleMothers";
 import WhyCantMothersHeadTheHome from "./bloginfopages/WhyCantMothersHeadTheHome";
 
 const blogMap = {
@@ -33,6 +34,10 @@ const blogMap = {
   },
   '5-african-women-on-sex-postpartum':{
     component: SexPostPartum,
+    readTime: '5 mins read',
+  },
+  'things-you-should-never-say-to-women-who-choose-single-motherhood':{
+    component: ThingsYouShouldNeverSayToSingleMothers,
     readTime: '5 mins read',
   }
 };
