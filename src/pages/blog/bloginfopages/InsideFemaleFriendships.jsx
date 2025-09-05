@@ -80,6 +80,19 @@ function InsideFemaleFriendships() {
           <span className="font-bold">Rese: </span> I like to think I am a very thoughtful person, so I don’t just give out gifts like that, I actually think about what I am giving out. I don’t do things half-heartedly — I go all in, which is what I did with the Bible verse jar. 
         </p>
       </div>
+
+      <div className="mb-6 text-justify space-y-4">
+        <h1 className="font-bold text-xl">Why do you think your friendship turned out differently from the stereotypical female friendship? </h1>
+      </div>
+
+      <div className="mb-6 text-justify space-y-4">
+        <p>
+          <span className="font-bold">Anita:</span>I feel it’s a friendship sent from God. We have grown a lot together and in terms of communication, we try our best to communicate – that’s literally the best quality in our friendship, no matter how painful the truth is, we tell each other. If you really care about someone it’d be your goal to make them behave better honestly.
+        </p>
+        <p>
+          <span className="font-bold">Rese: </span> Firstly, I can’t blame people for viewing female friendships that way. Society tends to pit women against each other. I was able to train myself to know that she is not better than me and I am not better than her, we are both different in our own beautiful way. Also I believe our friendship was engineered by God, all we just have is love and we just want each other to grow and be happy. She is happy when I am happy and I am happy when she is happy.
+        </p>
+      </div>
     </section>
   );
 }
