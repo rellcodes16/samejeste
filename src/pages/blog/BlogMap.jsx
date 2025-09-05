@@ -2,6 +2,7 @@ import BlackWomenInspire from "./bloginfopages/BlackWomenInspire";
 import CelebrateMotherhood from "./bloginfopages/CelebrateMotherhood";
 import FeminineEnergy from "./bloginfopages/FeminineEnergy";
 import ImproveMentalHealth from "./bloginfopages/ImproveMentalHealth";
+import InsideFemaleFriendships from "./bloginfopages/InsideFemaleFriendships";
 import SexPostPartum from "./bloginfopages/SexPostPartum";
 import TheRealityOfBeingASAHM from "./bloginfopages/TheRealityOfBeingAStayAtHomeMum";
 import ThingsYouShouldNeverSayToSingleMothers from "./bloginfopages/ThingsYouShouldNeverSayToSingleMothers";
@@ -39,7 +40,11 @@ const blogMap = {
   'things-you-should-never-say-to-women-who-choose-single-motherhood':{
     component: ThingsYouShouldNeverSayToSingleMothers,
     readTime: '5 mins read',
-  }
+  },
+  'inside-female-friendships-anita-and-rese':{
+    component: InsideFemaleFriendships,
+    readTime: '5 mins read',
+  },
 };
 
 export default blogMap;
