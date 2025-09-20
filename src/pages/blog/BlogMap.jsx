@@ -1,3 +1,4 @@
+import BlackArtists from "./bloginfopages/BlackArtists";
 import BlackWomenInspire from "./bloginfopages/BlackWomenInspire";
 import CelebrateMotherhood from "./bloginfopages/CelebrateMotherhood";
 import FeminineEnergy from "./bloginfopages/FeminineEnergy";
@@ -43,6 +44,10 @@ const blogMap = {
   },
   'inside-female-friendships-anita-and-rese':{
     component: InsideFemaleFriendships,
+    readTime: '5 mins read',
+  },
+  '6-black-female-artists-you-wish-you-had-discovered-earlier':{
+    component: BlackArtists,
     readTime: '5 mins read',
   },
 };
