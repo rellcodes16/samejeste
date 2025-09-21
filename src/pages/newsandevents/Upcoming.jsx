@@ -46,7 +46,7 @@ const UpcomingEvents = () => {
                   <img
                     src={event.thumbnail}
                     alt={event.name}
-                    className="rounded-xl w-full h-48 md:h-60 object-cover object-center shadow-md"
+                    className="rounded-xl w-full aspect-[4/3] md:aspect-[16/9] object-cover object-center shadow-md"
                   />
                 </div>
                 <div className="flex-1">
