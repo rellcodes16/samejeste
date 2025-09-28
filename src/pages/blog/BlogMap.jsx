@@ -5,6 +5,7 @@ import FeminineEnergy from "./bloginfopages/FeminineEnergy";
 import ImproveMentalHealth from "./bloginfopages/ImproveMentalHealth";
 import InsideFemaleFriendships from "./bloginfopages/InsideFemaleFriendships";
 import SexPostPartum from "./bloginfopages/SexPostPartum";
+import SocietyDefinition from "./bloginfopages/SocietyDefinition";
 import TheRealityOfBeingASAHM from "./bloginfopages/TheRealityOfBeingAStayAtHomeMum";
 import ThingsYouShouldNeverSayToSingleMothers from "./bloginfopages/ThingsYouShouldNeverSayToSingleMothers";
 import WhyCantMothersHeadTheHome from "./bloginfopages/WhyCantMothersHeadTheHome";
@@ -50,6 +51,10 @@ const blogMap = {
     component: BlackArtists,
     readTime: '5 mins read',
   },
+  'it-s-ok-to-not-be-society-s-definition-of-beautiful':{
+    component: SocietyDefinition,
+    readTime: '5 mins read',
+  }
 };
 
 export default blogMap;
