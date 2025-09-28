@@ -9,7 +9,7 @@ function SocietyDefinition() {
       <img
         src="https://i.pinimg.com/736x/4a/82/1d/4a821d7094049436da5418036f03767b.jpg"
         alt="motherhood"
-        className="w-[500px] h-[500px] mx-auto rounded-lg mb-6"
+        className="w-full max-w-xl mx-auto rounded-lg mb-6"
       />
 
       <div className="mb-6 text-justify space-y-4">
@@ -26,7 +26,7 @@ function SocietyDefinition() {
       <img
         src="https://i.pinimg.com/736x/a1/c7/c5/a1c7c55c289617ccb751cf62c514e935.jpg"
         alt="motherhood"
-        className="w-[500px] h-[500px] mx-auto rounded-lg mb-6"
+        className="w-full max-w-xl mx-auto rounded-lg mb-6"
       />
 
       <div className="mb-6 text-justify space-y-4">
@@ -47,7 +47,7 @@ function SocietyDefinition() {
       <img
         src="https://i.pinimg.com/736x/ba/2f/23/ba2f232d6f237e1ee807780c0b57f45d.jpg"
         alt="motherhood"
-        className="w-[500px] h-[500px] mx-auto rounded-lg mb-6"
+        className="w-full max-w-xl mx-auto rounded-lg mb-6"
       />
 
       <div className="space-y-4">
